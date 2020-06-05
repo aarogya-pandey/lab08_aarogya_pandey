@@ -15,7 +15,7 @@ using namespace std;
  * the case for the letters (upper or lower) should not
  * affect your result. 
  */
-bool isAnagram(string s1, string s2){
+bool isAnagram(string s1, string s2) {
   int length1 = s1.length();
   int length2 = s2.length();
 
@@ -32,7 +32,7 @@ bool isAnagram(string s1, string s2){
   string count2 = "";
   for (int i = 0; i <length1; i++) {
     if (isaplpha(s1[i]) && !isspace(s1[i]) && !ispunct(s1[i]))
-      count1 += count1 + s1[i];
+      count1 = count1 + s1[i];
   }
   for (int i = 0; i <length2; i++) {
     if (isalpha(s2[i]) && !isspace(s2[i]) && !ispunct(s2[i]))
