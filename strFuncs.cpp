@@ -23,7 +23,7 @@ bool isAnagram(string s1, string s2) {
     if (isupper(s1[i]))
       s1[i] = tolower(s1[i]);
   }
-  for (int i = 0 i < length2; i++) {
+  for (int i = 0; i < length2; i++) {
     if (isupper(s2[i]))
       s2[i] = tolower(s2[i]);
   }
@@ -31,7 +31,7 @@ bool isAnagram(string s1, string s2) {
   string count1 = "";
   string count2 = "";
   for (int i = 0; i <length1; i++) {
-    if (isaplpha(s1[i]) && !isspace(s1[i]) && !ispunct(s1[i]))
+    if (isalpha(s1[i]) && !isspace(s1[i]) && !ispunct(s1[i]))
       count1 = count1 + s1[i];
   }
   for (int i = 0; i <length2; i++) {
